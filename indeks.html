@@ -1,18 +1,96 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTL-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>halaman saya</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halaman Saya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, footer {
+      background-color: #0a9396;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    footer {
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>nelayanhiu</h1>
+    <p>Selamat datang di situs pribadi saya</p>
   </header>
+
   <nav>
-    <!--daftartautan-->
+    <!-- Daftar tautan -->
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
   </nav>
+
   <main>
-    <section>
-      </h2>sub-judul</h2>
+    <section id="beranda">
+      <h2>Beranda</h2>
+      <p>Ini adalah halaman utama dari situs nelayanhiu. Kami membahas kehidupan laut, petualangan nelayan, dan cerita seru di lautan.</p>
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>Nelayanhiu adalah komunitas penggemar laut yang berbagi informasi dan pengalaman seputar penangkapan ikan, kehidupan bawah laut, dan konservasi.</p>
+    </section>
+
+    <section id="galeri">
+      <h2>Galeri</h2>
+      <img src="https://via.placeholder.com/300x200" alt="Gambar laut" />
+      <img src="https://via.placeholder.com/300x200" alt="Nelayan berlayar" />
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Hubungi kami melalui email: <a href="mailto:info@nelayanhiu.id">info@nelayanhiu.id</a></p>
+      <form>
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan" rows="4" cols="40"></textarea><br><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NelayanHiu. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>
+
+    
     
